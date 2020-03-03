@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+    <form action="javascript:saluda();">
+      <br> <center><font face="Comic Sans MS,Arial,Verdana"><h3>Formulario Musica</h3></font></center><br>
+      <p>
+        <center><input type="text" id="nombre" required placeholder="Nombre"></center>
+      </p>
+      <p>
+        <center><button type="submit">Saludar</button></center>
+      </p>
+      
+    </form>
+    <script>
+      function saluda() {
+        const respuesta = `Hola que tal, Bienvenid@ ${nombre.value}.`;
+        alert(respuesta);
+      }
+    </script>
+  </body>
+  
+    <title>Recomendaciones</title>
+    <style>
+            
+        </style>
+    <script type="text/javascript">
+        function genero() {
+            var ge = document.getElementById('select').value;
+
+            if (ge == 'ba') {
+                alert('Te recomendamos escuchar la Banda MS.');
+            } else if (ge == 'tra') {
+                alert('Te recomendamos escuchar Travis Scott y 21savage.');
+            } else if (ge == 'sa') {
+                alert('Te recomendamos escuchar a Gilberto Santarosa y Jerry Rivera');
+            } else if (ge =='co'){
+                alert('Te recomendamos escuchar al Grupo Firme');
+            } else if (ge == 'roc'){
+                alert('Te recomendamos escuchar a Cafe Tacvba e Iran roll');
+            } else if (ge == 'reg'){
+                alert('Te recomendamos escuchar a Don Omar');
+            } else if (ge == 'regga'){
+                alert('Te recomendamos escuchar a Bob Marley');
+            } else if (ge == 'elec'){
+                alert('Te recomendamos escuchar a Oliver Heldens y Dimitri Vegas & Like Mike');
+            } else {
+                alert('No seleccionaste ningun Genero');
+            }
+        }
+    </script>
+</head>
+
+<body>
+    
+    <center><input type="text" name="txtNom" id="txtEdad" placeholder="escriba su nombre" /> </center>
+    <br>
+    <center><input type="text" name="txtNom" id="txtEdad" placeholder="escribe tu edad" /></center></center>
+    <br>
+    <center><input type="text" name="txtMusic" id="" placeholder="escribe tu telefono" /></center>
+    <br> <center><font face="Comic Sans MS,Arial,Verdana"><h3>¿Que genero musical te gusta?</h3></font></center><br>
+    <center><select name="select" id="select">
+        <option value="ba">Banda</option>
+        <option value="tra">Trap</option>
+        <option value="sa">Salsa</option>
+        <option value="co">Corridos</option>
+        <option value="roc">Rock</option>
+        <option value="reg">Reggaeton</option>
+        <option value="regga"selected>Reggae</option>
+        <option value="elec">Electronica</option>
+    </select></center>
+    <br>
+
+   <center> <button id="btnValidar" onclick="genero()">enviar</button></center>
+   
+</body>
+<br>
+<br>
+<br>
+<footer>Vazquez Sanchez Edwin IC-41M.</footer>
+
+</html>
